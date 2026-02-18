@@ -1,0 +1,35 @@
+GMAO HOME PAGE - REQUIRED IMAGES
+================================
+
+ضع كل الصور داخل هذا المجلد:
+public/images/home/
+
+1) صورة الشركة الرئيسية
+- اسم الملف: company-photo.jpg
+- المسار: public/images/home/company-photo.jpg
+- الاستخدام: بطاقة الشركة في الصفحة الرئيسية
+
+2) صورة الصيانة
+- اسم الملف: maintenance.jpg
+- المسار: public/images/home/maintenance.jpg
+- الاستخدام: قسم طلبات/أعمال الصيانة
+
+3) صورة المشاريع
+- اسم الملف: projects.jpg
+- المسار: public/images/home/projects.jpg
+- الاستخدام: قسم المشاريع
+
+4) صورة اللوجستيك
+- اسم الملف: logistics.jpg
+- المسار: public/images/home/logistics.jpg
+- الاستخدام: قسم الأصول اللوجستية
+
+5) صورة قطع الغيار
+- اسم الملف: spareparts.jpg
+- المسار: public/images/home/spareparts.jpg
+- الاستخدام: قسم قطع الغيار
+
+مهم:
+- استخدم نفس الأسماء حرفيا.
+- يُفضل أبعاد متقاربة (مثال: 1200x700) حتى يكون الشكل متناسق.
+- إذا وضعت الصور بصيغة PNG بدل JPG، أخبرني لأعدل المسارات لك تلقائيا.

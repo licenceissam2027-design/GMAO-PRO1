@@ -1,0 +1,9 @@
+﻿@extends('layouts.app')
+@section('content')
+<div class="card p-3 form-shell"><div class="d-flex justify-content-between align-items-center mb-3"><h5 class="mb-0">{{ __('gmao.assets.technical_new') }}</h5><a class="btn btn-sm btn-outline-secondary" href="{{ route('assets.technical') }}">{{ __('gmao.common.open') }}</a></div>
+<form method="POST" action="{{ route('assets.technical.store') }}" class="row g-2">@csrf
+<div class="col-md-4"><input class="form-control" name="name" placeholder="{{ __('gmao.common.name') }}" required></div><div class="col-md-3"><input class="form-control" name="code" placeholder="{{ __('gmao.common.code') }}" required></div><div class="col-md-3"><select class="form-select" name="sector"><option value="">{{ __('gmao.common.sector') }}</option>@foreach($sectors as $sector)<option value="{{ $sector }}">{{ __('gmao.enum.sector.'.$sector) }}</option>@endforeach</select></div><div class="col-md-2"><select class="form-select" name="status">@foreach(['active','maintenance','retired'] as $s)<option value="{{ $s }}">{{ __('gmao.enum.status.'.$s) }}</option>@endforeach</select></div>
+<div class="col-md-3"><select class="form-select" name="category">@foreach(['computer','printer','network','other'] as $c)<option value="{{ $c }}">{{ __('gmao.enum.type.'.$c) }}</option>@endforeach</select></div><div class="col-md-3"><input class="form-control" name="brand" placeholder="{{ __('gmao.common.brand') }}"></div><div class="col-md-3"><input class="form-control" name="model" placeholder="{{ __('gmao.common.model') }}"></div><div class="col-md-3"><input class="form-control" name="serial_number" placeholder="{{ __('gmao.common.serial') }}"></div><div class="col-md-6"><input class="form-control" name="location" placeholder="{{ __('gmao.common.location') }}"></div>
+<div class="col-12"><button class="btn btn-primary">{{ __('gmao.common.save') }}</button></div>
+</form></div>
+@endsection
